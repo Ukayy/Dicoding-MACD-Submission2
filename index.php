@@ -8,11 +8,10 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-//$connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
-$connectionString = "30yyvsNtQFb+QH8LO7gFowgE2fWFSN7mCm45CErxz4LX3ZW/4pran4KUmORGcXXwRJtBz5xQ/DEWo7XGLJzq5g==";
-$containerName = "ukay";
+$connectionString = "<YourKey>";
+$containerName = "<YourBlob>";
+// Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-
 if (isset($_POST['submit'])) {
 	$fileToUpload = strtolower($_FILES["fileToUpload"]["name"]);
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
