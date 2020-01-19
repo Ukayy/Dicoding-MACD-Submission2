@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "<YourKey>";
-$containerName = "<YourBlob>";
+$connectionString = "30yyvsNtQFb+QH8LO7gFowgE2fWFSN7mCm45CErxz4LX3ZW/4pran4KUmORGcXXwRJtBz5xQ/DEWo7XGLJzq5g==";
+$containerName = "ukay";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
