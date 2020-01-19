@@ -33,7 +33,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico"> -->
+
 
     <title>Image Analyzer App</title>
 
@@ -79,7 +79,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td><?php echo $blob->getName() ?></td>
 							<td><?php echo $blob->getUrl() ?></td>
 							<td>
-								<form action="testVision.php" method="post">
+								<form action="computervision.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
 									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
 								</form>
